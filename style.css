@@ -1,0 +1,194 @@
+html {
+  background-color: #000;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
+  width: 485px;
+  margin: 0 auto;
+}
+
+h1 {
+  background-color: #fff;
+  color: #007d7b;
+  font-size: 3em;
+  padding: 4px;
+  margin: 0;
+}
+
+nav h2 { /*could be useful to get back to the top. Else just delete it*/
+  visibility: hidden;
+  height: 1px;
+  margin: 0;
+}
+
+nav ul {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+nav li {
+  list-style-type: none; /*removes bullets*/
+  text-align: center;
+  font-weight: bold;
+  margin: auto;
+}
+
+nav a {
+  background-color: #000;
+  color: #fff;
+  width: 100px;
+  height: 30px;
+  display: block; /*clickable*/
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 0;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 0px;
+}
+#about {
+  background-color: #fff;
+  padding: 10px;
+}
+#gallery {
+  background-color: #fff;
+  content: center;
+}
+#gallery p {
+  content: justify;
+  padding: 10px;
+}
+
+p {
+  margin: 0;
+  font-size: 1.25em;
+}
+
+figure {
+  display: grid;
+  text-align: center;
+  margin-left: 0;
+  padding-left: 6%;
+}
+
+.figwhitetop {
+  text-align: center;
+}
+.figwhitebottom {
+
+}
+.figblacktop {
+
+}
+.figblackbottom {
+
+} 
+
+
+.contact {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  margin: 20px;
+}
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 15px;
+}
+#contact p {
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+}
+
+::placeholder { /*controling the color of the text in the <form> input boxes*/
+  color: #007d7b;
+}
+label {
+  color: #fff;
+  display: block;
+  padding-left: 2em;
+  font-weight: bold;
+}
+input {
+  margin-left: 1em;
+  margin-bottom: 20px;
+  padding-left: 1em;
+  width: 27em;
+  height: 2em;
+  font-weight: bold;
+}
+#submit {
+  background-color: #007d7b;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 8em;
+  margin-bottom: 4em;
+  width: 16em;
+  height: 3em;
+  border-radius: 1.2em;
+  justify-content: center;
+  border-style: none;
+}
+
+footer { 
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+figcaption, label, input, small {
+  font-size: 1em;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 485px) {
+  #wrapper {
+    width: 485px;
+  }
+
+  figure {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  #wrapper {
+    width: 880px;
+  }
+
+  figure {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #wrapper {
+    width: 1300px;
+  }
+
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }  
+}
